@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## When you would use a SQL UDF
+A **User Defined Function (UDF)** is a customized function, which are often best used when there is a specific repetitive task to complete within SQL code. A UDF can be used to return a table, essentially as a SELECT statement, but is commonly used when used to compute or transform incoming variable data. 
 
-You can use the [editor on GitHub](https://github.com/jricciardi/DBFoundations-Module07/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Differences between Scalar, Inline, and Multi-Statement Functions
+A **Scalar function** returns a single value.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+An **Inline function** is similar to a view in that an inline function can only contain a single SELECT statement and the columns of that statement carry into the returned data.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jricciardi/DBFoundations-Module07/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+A **Multi-Statement function** does what it says on the tin: the function stores a more than one statements and executes them in a defined order. A multi-statement function might aggregate data, clean strings, and then alter a view to add the newly transformed data.
